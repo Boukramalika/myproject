@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("font/Poppins/Poppins") format("ttf"),      
+   }
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("font/Poppins/Poppins-Medium") format("ttf"),      
+   }
+
+
+#bloc-page
+{
+   width: 900px;
+    margin: auto;
+    color: black;
+    font-family: "Poppins";
+    line-height: 40px
+    
+}
+
+header
+{
+    display:flex;
+    align-items: center;
+    background-color: #0475ba;
+    color: white;
+    height:72px
+}
+header h1
+{
+    font: size 0.5em;
+    font-weight:normal;
+    margin:10 10 10 10px;
+}
+
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+
+    
+}
+nav li
+{
+    margin-right: 40px;
+}
+
+
+nav a
+{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#profil
+{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+#profil h2 
+{
+    font-size: 1.3em;
+    color: black;
+
+}
+
+#profil h3
+{
+    font-size: 1.3em;
+    color: #0475ba;
+
+}
+
+/*
+.monimage 
+
+{
+    
+    margin-right: 50%;
+}
+*/
+.monimage img
+{
+    border-radius: 50%;
+    height: 150px; /*hauteur*/
+    width: 150px; /*largeur*/
+  /* margin-right:  50%;*/
+}
+
+#presentation
+{
+    color: white;
+    background-color: #0475ba;
+    
+}
+
+#presentation h1
+{
+    text-align: center;
+
+}
+ 
+#presentation li
+{
+    margin-left: 8em ; 
+}
+	
+#experiences-professionnelles h1
+{
+color: mediumblue;
+text-align: center;
+}
+
+#mes-formations
+{
+    color: white;
+    background-color: #0475ba;
+} 
+#mes-formations h1
+{
+    text-align: center;
+} 
