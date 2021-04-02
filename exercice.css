@@ -16,11 +16,10 @@
     margin: auto;
     color: black;
     font-family: "Poppins";
-    line-height: 40px
-    
+    line-height: 40px;
+  
+
 }
-
-
 header
 {
     display:flex;
@@ -28,7 +27,7 @@ header
     background-color: #0475ba;
     color: white;
     height:72px
-    marg
+    
 }
 header h1
 {
@@ -155,27 +154,47 @@ nav a
 
 #mes-formations
 {
-    color: white;
-    background-color: #0475ba;
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    background-color:#0475ba;
+  color:white;
+  
 } 
-#mes-formations h1
+.titre1
 {
-    text-align: center;
-} 
+    
+
+    width:100%;
+    margin-left:20%;
+}
+.diplome
+{
+    font-weight: bold; 
+    margin-left:20%;
+}
+.annee
+{
+    font-weight: bold; 
+    width:15%;
+    
+}
+
+
 
 #passions
 {
     background-color:white ;
-    color:#0475ba ;
+    color:black;
+    margin-left:20%;
 }
 #passions h1
 {
-    text-align: center;
+    color:#0475ba ;
 }
-#passions ul
-{
-    color: black;
-}
+
 footer
 {
     display: flex;
@@ -186,17 +205,31 @@ footer
 }
 
 
-#titres
+#titres 
 {
 
     color: white;
     text-align: middle;
     text-decoration: underline;
     margin-left: 3%;
+    
+}
+
+
+#titres  a
+{
+
+    color: white;
+ 
+    
 }
 
 .link
 {
     color: white;
-
 }
+
+
+
+
+
