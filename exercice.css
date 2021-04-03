@@ -128,7 +128,7 @@ nav a
     display: flex;
     
     flex-wrap: wrap;
-
+    
     justify-content: space-between;
     background-color: white;
     margin-left: 20%;
@@ -155,12 +155,11 @@ nav a
 #mes-formations
 {
     display: flex;
-    
     flex-wrap: wrap;
-
     justify-content: space-between;
     background-color:#0475ba;
   color:white;
+  
   
 } 
 .titre1
@@ -169,9 +168,11 @@ nav a
 
     width:100%;
     margin-left:20%;
+    
 }
 .diplome
 {
+    
     font-weight: bold; 
     margin-left:20%;
 }
@@ -194,13 +195,14 @@ nav a
 {
     color:#0475ba ;
 }
-
 footer
 {
     display: flex;
     background-color:#0475ba ;
     flex-wrap: wrap;
-    gap: 250px;
+    justify-content: space-between;
+    
+   
      
 }
 
@@ -221,14 +223,101 @@ footer
 
     color: white;
  
-    
 }
 
 .link
 {
     color: white;
+
+     margin-right: 600px;
+     padding-top: 50px;
+}
+@media all and (max-width:768px)
+{
+    #bloc-page
+    {
+    width: auto;
+    
+    }
+
+    h1
+    {
+text-align: center;
+    }
+    nav ul
+{
+    display:none;
+}
+#profil
+{
+   
+    flex-direction: column;
+    margin-left: 0%;
+
+    
 }
 
+.monimage img
+{
+  
+   margin-right: 0px;
+
+}
+#presentation h1
+{
+    text-align: center;
+    margin: auto;
+}
+
+#presentation li
+{
+    
+    margin:0px;
+}
+#experiences-professionnelles 
+{
+  
+  margin: 0px;
+}
+
+.diplome
+{
+    margin-left: 0%;
+    width:50% ;
+}
+.titre1
+{
+
+text-align: center;
+    margin: auto;
+}
+#passions
+{
+    
+    margin:0%;
+}
+#passions h1
+{
+    text-align: center;
+    margin: auto;
+}
+    
+    
+
+  
+footer
+{
+    
+    flex-direction: column;
+    
+}
+.link
+{
+    margin-left: 3%;
+}
+
+
+}
 
 
 
