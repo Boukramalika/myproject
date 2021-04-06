@@ -9,29 +9,33 @@
    }
 
 
+
 #bloc-page
 {
-   width: 900px;
+  /* width: 900px;*/
     margin: auto;
     color: black;
     font-family: "Poppins";
-    line-height: 40px
-    
-}
+    line-height: 40px;
+  
 
+}
 header
 {
     display:flex;
     align-items: center;
     background-color: #0475ba;
     color: white;
-    height:72px
+    height:72px;
+    width:100%;
 }
 header h1
 {
     font: size 0.5em;
     font-weight:normal;
     margin:10 10 10 10px;
+    margin-left: 20px;
+    
 }
 
 
@@ -39,7 +43,8 @@ nav ul
 {
     list-style-type: none;
     display: flex;
-    flex-flow: row wrap;
+    margin-left: 15%;
+  /*  flex-flow: row wrap;*/
 
     
 }
@@ -66,14 +71,18 @@ nav a
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-
+    margin-left: 20%;
+    
 }
+
+
 
 
 #profil h2 
 {
     font-size: 1.3em;
     color: black;
+
 
 }
 
@@ -84,52 +93,286 @@ nav a
 
 }
 
-/*
+
 .monimage 
 
 {
-    
-    margin-right: 50%;
+ margin-top: 40px;  
 }
-*/
+
 .monimage img
 {
     border-radius: 50%;
     height: 150px; /*hauteur*/
-    width: 150px; /*largeur*/
-  /* margin-right:  50%;*/
+    width:200px; /*largeur*/
+   margin-right: 200px;
+
 }
 
 #presentation
 {
     color: white;
     background-color: #0475ba;
-    
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #presentation h1
 {
-    text-align: center;
-
+    margin-left: 20%;
+   
 }
  
 #presentation li
 {
-    margin-left: 8em ; 
+    margin-left: 20%;
 }
 	
-#experiences-professionnelles h1
+#experiences-professionnelles 
 {
-color: mediumblue;
-text-align: center;
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 10%;
+    
 }
+.titre 
+{
+    
+    width: 100%;
+    color:#0475ba ;
+    
+}
+.annee-carrefour
+{
+    font-weight: bold;
+    width: 30%;
+}
+.annee-psychologue
+{
+    font-weight: bold;
+    width: 30%;
+}
+
 
 #mes-formations
 {
-    color: white;
-    background-color: #0475ba;
+    display: flex;
+   flex-wrap: wrap;
+ 
+    justify-content: space-between;
+    background-color:#0475ba;
+  color:white;
+  
+  
+  
 } 
-#mes-formations h1
+
+.titre1
+{
+    
+
+    width:100%;
+    margin-left:20%;
+    
+}
+.diplome
+{
+     
+    font-weight: bold; 
+    margin-left:20%;
+}
+.annee
+{
+    
+    font-weight: bold; 
+    width:30%;
+    
+}
+
+
+
+#passions
+{
+    background-color:white ;
+    color:black;
+    margin-left:20%;
+}
+#passions h1
+{
+    color:#0475ba ;
+}
+footer
+{
+    display: flex;
+    background-color:#0475ba ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      
+    
+   
+     
+}
+
+
+#titres 
+{
+
+    color: white;
+    text-align: middle;
+    text-decoration: underline;
+    margin-left: 3%;
+
+}
+
+#titres  a 
+{
+
+    color: white;
+ 
+}
+
+/*
+.link
+{
+    color: white;
+
+     margin-right: 600px;
+     padding-top: 50px;
+}
+
+.liens {
+    width: 800px;
+}
+*/
+.content-small  {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.content-small ul{
+
+    list-style-type: none;
+    color: white;
+    margin-left: 30px
+    
+}
+
+.content-small a{
+
+    color: white;
+    
+}
+
+
+
+
+
+@media all and (max-width:768px)
+{
+    #bloc-page
+    {
+   width: 100%;
+    /*margin: 10%;*/
+    
+    }
+
+    h1
+    {
+text-align: center;
+    }
+    nav ul
+{
+    display:none;
+}
+#profil
+{
+   
+    flex-direction: column;
+    margin-left: 0%;
+
+    
+}
+
+.monimage img
+{
+  
+   margin-right: 0px;
+
+}
+#presentation h1
 {
     text-align: center;
-} 
+    margin: auto;
+}
+
+#presentation li
+{
+    
+    margin:0px;
+}
+#experiences-professionnelles 
+{
+  
+  margin: 0px;
+}
+#mes-formations
+{ 
+    
+    justify-content: space-between;
+   flex-direction: column;
+        width: 100%;
+  
+}
+
+
+.diplome
+{
+    margin-left: 0%;
+   /* width:50% ;*/
+}
+   
+
+.titre1
+{
+
+text-align: center;
+    margin: auto;
+}
+#passions
+{
+    
+    margin:0%;
+}
+#passions h1
+{
+    text-align: center;
+    margin: auto;
+}
+    
+/*footer*/
+
+#liens a 
+{
+display: block;
+flex-direction: column;
+width: 100%;
+padding-right: 5px;
+}
+footer .content-small {
+    flex-direction: column;
+    width: 100%;
+}
+
+
+}
+
+
+
+
