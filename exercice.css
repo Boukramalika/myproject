@@ -12,7 +12,7 @@
 
 #bloc-page
 {
-   width: 900px;
+  /* width: 900px;*/
     margin: auto;
     color: black;
     font-family: "Poppins";
@@ -26,14 +26,16 @@ header
     align-items: center;
     background-color: #0475ba;
     color: white;
-    height:72px
-    
+    height:72px;
+    width:100%;
 }
 header h1
 {
     font: size 0.5em;
     font-weight:normal;
     margin:10 10 10 10px;
+    margin-left: 20px;
+    
 }
 
 
@@ -41,7 +43,8 @@ nav ul
 {
     list-style-type: none;
     display: flex;
-    flex-flow: row wrap;
+    margin-left: 15%;
+  /*  flex-flow: row wrap;*/
 
     
 }
@@ -147,23 +150,28 @@ nav a
 .annee-carrefour
 {
     font-weight: bold;
+    width: 30%;
 }
 .annee-psychologue
 {
     font-weight: bold;
+    width: 30%;
 }
 
 
 #mes-formations
 {
     display: flex;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
+ 
     justify-content: space-between;
     background-color:#0475ba;
   color:white;
   
   
+  
 } 
+
 .titre1
 {
     
@@ -174,14 +182,15 @@ nav a
 }
 .diplome
 {
-    
+     
     font-weight: bold; 
     margin-left:20%;
 }
 .annee
 {
+    
     font-weight: bold; 
-    width:15%;
+    width:30%;
     
 }
 
@@ -203,6 +212,7 @@ footer
     background-color:#0475ba ;
     flex-wrap: wrap;
     justify-content: space-between;
+      
     
    
      
@@ -217,18 +227,16 @@ footer
     text-decoration: underline;
     margin-left: 3%;
 
-    
 }
 
-
-
-#titres  a
+#titres  a 
 {
 
     color: white;
  
 }
 
+/*
 .link
 {
     color: white;
@@ -236,11 +244,42 @@ footer
      margin-right: 600px;
      padding-top: 50px;
 }
+
+.liens {
+    width: 800px;
+}
+*/
+.content-small  {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.content-small ul{
+
+    list-style-type: none;
+    color: white;
+    margin-left: 30px
+    
+}
+
+.content-small a{
+
+    color: white;
+    
+}
+
+
+
+
+
 @media all and (max-width:768px)
 {
     #bloc-page
     {
-    width: auto;
+   width: 100%;
+    /*margin: 10%;*/
     
     }
 
@@ -283,12 +322,23 @@ text-align: center;
   
   margin: 0px;
 }
+#mes-formations
+{ 
+    
+    justify-content: space-between;
+   flex-direction: column;
+        width: 100%;
+  
+}
+
 
 .diplome
 {
     margin-left: 0%;
-    width:50% ;
+   /* width:50% ;*/
 }
+   
+
 .titre1
 {
 
@@ -306,20 +356,18 @@ text-align: center;
     margin: auto;
 }
     
-    
+/*footer*/
 
-  
-footer
+#liens a 
 {
-    
-    flex-direction: column;
-    
+display: block;
+flex-direction: column;
+width: 100%;
+padding-right: 5px;
 }
-.link
-{
-    margin-left: 3%;
-    align-items: flex-start;
-
+footer .content-small {
+    flex-direction: column;
+    width: 100%;
 }
 
 
